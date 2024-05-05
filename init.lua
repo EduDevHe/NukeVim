@@ -1,1 +1,1 @@
-require("nvimConfig.lazy")
+require("nukevim")
