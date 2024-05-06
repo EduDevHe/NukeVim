@@ -1,6 +1,8 @@
-return  {
+ return {
     "nvim-telescope/telescope.nvim",
-    dependencies = { "nvim-treesitter/nvim-treesitter" },
-    cmd = "Telescope",
-    
+  
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    }   
+
   }
