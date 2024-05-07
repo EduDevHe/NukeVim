@@ -1,0 +1,1 @@
+require("nukevim.config.options")
