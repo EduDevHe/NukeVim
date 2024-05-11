@@ -14,6 +14,7 @@
     dependencies = {
       {
         "nvim-treesitter/nvim-treesitter-textobjects",
+        lazy = true,
         config = function()
           -- When in diff mode, we want to use the default
           -- vim text objects c & C instead of the treesitter ones.
