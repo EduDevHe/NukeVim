@@ -1,24 +1,9 @@
 return {
-  {
     "neovim/nvim-lspconfig",
     lazy = false,
-    
-  },
 
-  {
-    "williamboman/mason.nvim",
-    lazy = false,
     config = function()
-			require("nukevim.plugins.config.mason")
+    --     local capabilities = require('cmp_nvim_lsp').default_capabilities()
+    require("nukevim.plugins.config.nvim-lspconfig")
     end,
-  },
-
-  {
-    "williamboman/mason-lspconfig.nvim",
-    lazy = false,
-    opts = {
-      auto_install = true,
-    },
-  },
-  
 }
