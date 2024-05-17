@@ -1,4 +1,5 @@
 return {
+{
   "williamboman/mason.nvim",
  
   build = ":MasonUpdate",
@@ -9,5 +10,15 @@ return {
     "MasonUninstallAll",
     "MasonLog",
   },
-  
+    config = function()
+			require("nukevim.plugins.config.mason")
+    end,
+},
+ {
+    "williamboman/mason-lspconfig.nvim",
+    lazy = false,
+    opts = {
+      auto_install = true,
+    },
+  }, 
 }
