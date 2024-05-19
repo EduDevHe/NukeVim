@@ -13,6 +13,5 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   spec = "nukevim.plugins",
-  change_detection = { notify = false }
+  change_detection = { notify = false },
 })
-
