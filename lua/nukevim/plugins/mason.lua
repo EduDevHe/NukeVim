@@ -20,5 +20,9 @@ return {
     opts = {
       auto_install = true,
     },
+
+    config =function ()
+     require("nukevim.plugins.config.mason-lspconfig")
+    end
   },
 }
